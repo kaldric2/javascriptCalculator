@@ -9,8 +9,43 @@
         <link rel="stylesheet" href="_css/styles.css">
     </head>
     <body>
-        
-
+        <div class="calculator">
+            <div class="output">
+                <span id="resultsOutput">0</span>
+            </div>
+            <div class="output">
+                <span id="equationOutput">0</span>
+            </div>
+            <div class="btnRow">
+                <button class="normalBtn" type="button" name="button" onclick="resetEquation()">AC</button>
+                <button class="normalBtn" type="button" name="button" onclick="removeLastItem()">CE</button>
+                <button class="normalBtn" type="button" name="button" onclick="addItem(this)">+/-</button>
+                <button class="normalBtn" type="button" name="button" onclick="addItem(this)">+</button>
+            </div>
+            <div class="btnRow">
+                <button class="normalBtn" type="button" name="button" onclick="addItem(this)">7</button>
+                <button class="normalBtn" type="button" name="button" onclick="addItem(this)">8</button>
+                <button class="normalBtn" type="button" name="button" onclick="addItem(this)">9</button>
+                <button class="normalBtn" type="button" name="button" onclick="addItem(this)">-</button>
+            </div>
+            <div class="btnRow">
+                <button class="normalBtn" type="button" name="button" onclick="addItem(this)">4</button>
+                <button class="normalBtn" type="button" name="button" onclick="addItem(this)">5</button>
+                <button class="normalBtn" type="button" name="button" onclick="addItem(this)">6</button>
+                <button class="normalBtn" type="button" name="button" onclick="addItem(this)">*</button>
+            </div>
+            <div class="btnRow">
+                <button class="normalBtn" type="button" name="button" onclick="addItem(this)">1</button>
+                <button class="normalBtn" type="button" name="button" onclick="addItem(this)">2</button>
+                <button class="normalBtn" type="button" name="button" onclick="addItem(this)">3</button>
+                <button class="normalBtn" type="button" name="button" onclick="addItem(this)">/</button>
+            </div>
+            <div class="btnRow">
+                <button class="normalBtn" type="button" name="button" onclick="addItem(this)">0</button>
+                <button class="normalBtn" type="button" name="button" onclick="addItem(this)">.</button>
+                <button class="wideBtn" type="button" name="button" onclick="addItem(this)">=</button>
+            </div>
+        </div>
 
         <!-- JS CDNs -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
