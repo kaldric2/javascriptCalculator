@@ -6,16 +6,20 @@ body {
     display: block;
     margin: 30px auto;
     width: 300px;
-    height: 410px;
-    /*height: 445px;*/
+    height: 445px;
     border: 1px outset #988044;
     background: #d7c085;
 }
 
-/*.title {
+.title {
     height: 30px;
-    margin: margin: 24px 24px 5px 24px;
-}*/
+    margin: 24px 24px 5px 24px;
+    text-align: center;
+    font-size: 1em;
+    letter-spacing: 0.3em;
+    font-variant: small-caps;
+    color: #5f6987;
+}
 
 .output {
     display: block;
@@ -23,19 +27,18 @@ body {
     vertical-align: middle;
     width: 234px;
     height: 82px;
-    /*margin: 0 24px 5px 24px;*/
-    margin: 24px 24px 5px 24px;
+    margin: 0 24px 5px 24px;
 }
 
 #resultsOutput {
-    font-size: 35px;
+    font-size: 2.2em;
     vertical-align: middle;
     height: 51px;
     padding-right: 0;
 }
 
 #equationOutput {
-    font-size: 18px;
+    font-size: 1em;
     vertical-align: middle;
     color: #555;
     height: 31px;
@@ -48,7 +51,7 @@ body {
     height: 45px;
     margin: 5px 10px 5px 24px;
     /*border: 1px outset;*/
-    font-size: 20px;
+    font-size: 1.25em;
 }
 
 .normalBtn + .normalBtn {
@@ -65,7 +68,7 @@ div .normalBtn:last-of-type {
     height: 45px;
     margin: 5px 24px 5px 0px;
     /*border: 1px outset;*/
-    font-size: 20px;
+    font-size: 1.25em;
 }
 
 .normalBtn:active,
