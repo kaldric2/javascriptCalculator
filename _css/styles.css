@@ -5,38 +5,70 @@ body {
 .calculator {
     display: block;
     margin: 30px auto;
-    width: 50%;
-    border: 3px outset #988044;
-    background: #d7c085
+    width: 300px;
+    height: 410px;
+    /*height: 445px;*/
+    border: 1px outset #988044;
+    background: #d7c085;
 }
 
-.normalBtn {
-    display: inline-block;
-    width: 15%;
-    margin: 2px;
-    border: 1px outset;
-    font-size: 20px;
-}
-
-.wideBtn {
-    display: inline-block;
-    width: 32.5%;
-    margin: 2px 0px 2px 2px;
-    border: 1px outset;
-    font-size: 20px;
-}
+/*.title {
+    height: 30px;
+    margin: margin: 24px 24px 5px 24px;
+}*/
 
 .output {
     display: block;
     text-align: right;
-    width: 65%;
+    vertical-align: middle;
+    width: 234px;
+    height: 82px;
+    /*margin: 0 24px 5px 24px;*/
+    margin: 24px 24px 5px 24px;
 }
 
 #resultsOutput {
-    font-size: 20px;
+    font-size: 35px;
+    vertical-align: middle;
+    height: 51px;
+    padding-right: 0;
 }
 
 #equationOutput {
-    font-size: 12px;
+    font-size: 18px;
+    vertical-align: middle;
     color: #555;
+    height: 31px;
+    padding-right: 2px;
+}
+
+.normalBtn {
+    display: inline-block;
+    width: 51px;
+    height: 45px;
+    margin: 5px 10px 5px 24px;
+    /*border: 1px outset;*/
+    font-size: 20px;
+}
+
+.normalBtn + .normalBtn {
+    margin-left: 0;
+}
+
+div .normalBtn:last-of-type {
+    margin-right: 26px;
+}
+
+.wideBtn {
+    display: inline-block;
+    width: 115px;
+    height: 45px;
+    margin: 5px 24px 5px 0px;
+    /*border: 1px outset;*/
+    font-size: 20px;
+}
+
+.normalBtn:active,
+.wideBtn:active {
+    border: none;
 }
