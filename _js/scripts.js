@@ -41,7 +41,7 @@ function processEquation() {
     equation = [];
     numStr = currVal.toString();
     $("#resultsOutput").html(currVal);
-    $("#equationOutput").html(currVal);
+    $("#equationOutput").html($("#equationOutput").html() + " " + currVal);
 }
 
 function removeLastItem() {
