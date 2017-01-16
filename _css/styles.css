@@ -8,7 +8,11 @@ body {
     width: 300px;
     height: 445px;
     border: 1px outset #988044;
-    background: #d7c085;
+    border-radius: 25px;
+    background-color: #d7c085;/*,
+        -webkit-linear-gradient(top, #6b6b6b 0%, #a89e82 1%, #d7c085 3%, #d7c085 98%, #a89e82 99%, #6b6b6b 100%),
+        -webkit-linear-gradient(left, #6b6b6b 0%, #a89e82 1%, #d7c085 3%, #d7c085 98%, #a89e82 99%, #6b6b6b 100%);*/
+    box-shadow: 1px 1px 2px 3px #444;
 }
 
 .title {
@@ -18,14 +22,15 @@ body {
     font-size: 1em;
     letter-spacing: 0.3em;
     font-variant: small-caps;
-    color: #5f6987;
+    color: #515665;
+    text-shadow: 0.25px 0.25px 1px #515665;
 }
 
 .output {
     display: block;
     text-align: right;
     vertical-align: middle;
-    width: 234px;
+    width: 246px;
     height: 82px;
     margin: 0 24px 5px 24px;
 }
@@ -34,15 +39,27 @@ body {
     font-size: 2.2em;
     vertical-align: middle;
     height: 51px;
-    padding-right: 0;
+    padding: 2px;
+    background: #dfd7af;
+    border-top: 1px solid #777;
+    border-right: 1px solid #777;
+    border-left: 1px solid #777;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
 }
 
 #equationOutput {
     font-size: 1em;
+    color: #999;
     vertical-align: middle;
-    color: #555;
     height: 31px;
-    padding-right: 2px;
+    padding: 2px;
+    background: #dfd7af;
+    border-right: 1px solid #777;
+    border-bottom: 1px solid #777;
+    border-left: 1px solid #777;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
 }
 
 .normalBtn {
@@ -52,14 +69,32 @@ body {
     margin: 5px 10px 5px 24px;
     /*border: 1px outset;*/
     font-size: 1.25em;
+    font-weight: bold;
+    color: #444;
+    border-radius: 5px;
+    background-color: #D1D3D7;
 }
 
-.normalBtn + .normalBtn {
+.normalBtn + .normalBtn,
+.specialBtn + .normalBtn,
+.specialBtn + .specialBtn {
     margin-left: 0;
 }
 
 div .normalBtn:last-of-type {
     margin-right: 26px;
+}
+
+.specialBtn {
+    display: inline-block;
+    width: 51px;
+    height: 45px;
+    margin: 5px 10px 5px 24px;
+    /*border: 1px outset;*/
+    font-size: 1.25em;
+    color: #fff;
+    border-radius: 5px;
+    background-color: #3A4F8A;
 }
 
 .wideBtn {
@@ -69,6 +104,10 @@ div .normalBtn:last-of-type {
     margin: 5px 24px 5px 0px;
     /*border: 1px outset;*/
     font-size: 1.25em;
+    font-weight: bold;
+    color: #444;
+    border-radius: 5px;
+    background-color: #859AD7;
 }
 
 .normalBtn:active,
