@@ -61,6 +61,7 @@ function removeLastItem() {
 
 function resetEquation() {
     equation = [];
+    numStr = "";
     $("#resultsOutput").html("0");
     $("#equationOutput").html("0");
 }
